@@ -1,0 +1,37 @@
+Health Assistant - User Manual
+==============================
+
+Introduction
+------------
+Health Assistant is a tkinter-based Python application that includes a BMI calculator and a text editor. The BMI calculator allows users to enter their height and weight to calculate their BMI, classify it, and keep track of their average weight. The text editor allows users to open, save, and edit text files. Users can switch between the two programs using the menu bar.
+
+Getting Started
+---------------
+1. Install the Health Assistant application by following the Installation instructions in the README file.
+2. Run the application by executing 'python health_assistant.py' in the terminal or command prompt.
+
+Using the BMI Calculator
+------------------------
+1. Navigate to the BMI Calculator tab.
+2. Enter your height in feet and inches in the corresponding input fields.
+3. Enter your weight in pounds in the weight input field.
+4. Click the "Calculate BMI" button.
+5. The application will display your calculated BMI, classification, and average weight.
+
+Using the Text Editor
+---------------------
+1. Navigate to the Text Editor tab.
+2. To create a new file, click "File" in the menu bar and select "New."
+3. To open an existing file, click "File" in the menu bar and select "Open." Choose the desired file from the file dialog.
+4. Edit the text in the text editor as needed.
+5. To save your changes, click "File" in the menu bar and select "Save." Choose the desired location and filename in the file dialog.
+6. To exit the application, click "File" in the menu bar and select "Exit."
+
+Troubleshooting
+---------------
+1. If you encounter an error while entering height and weight values in the BMI calculator, make sure you are entering valid numbers. Check for any typos or incorrect data types.
+2. If you have issues opening or saving files in the text editor, make sure the file has the correct extension (e.g., ".txt") and the file path is valid.
+
+Support
+-------
+For further assistance or to report any issues, please contact kbrumback@ivytech.edu
