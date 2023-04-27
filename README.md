@@ -46,14 +46,14 @@ BMI Calculator
 
 1. Normal values:
 Test: Height = 5 feet 6 inches, Weight = 150 pounds
-Result: BMI = 24.2, Classification = Normal weight
+Result: BMI = 25.82, Classification = Overweight
 Conclusion: The test passed, the application calculated the BMI correctly.
 
 2. Edge cases:
 a. Minimum height:
 Test: Height = 1 foot, Weight = 50 pounds
-Result: Error message displayed: "Height is too low."
-Conclusion: The test passed, the application handled the edge case appropriately.
+Expected Result: Error message displayed: "Height is too low."
+Conclusion: The test did not pass, the application did not handle the edge case appropriately.
 
 b. Maximum height:
 Test: Height = 9 feet, Weight = 250 pounds
@@ -62,13 +62,13 @@ Conclusion: The test passed, the application calculated the BMI correctly for th
 
 c. Minimum weight:
 Test: Height = 5 feet 6 inches, Weight = 1 pound
-Result: Error message displayed: "Weight is too low."
-Conclusion: The test passed, the application handled the edge case appropriately.
+Expected Result: Error message displayed: "Weight is too low."
+Conclusion: The test failed, the application did not handle the edge case appropriately.
 
 d. Negative values:
 Test: Negative height and weight values
-Result: Error message displayed: "Invalid input. Height and weight must be positive values."
-Conclusion: The test passed, the application handled negative values correctly.
+Expected Result: Error message displayed: "Invalid input. Height and weight must be positive values."
+Conclusion: The test failed, the application did not handle negative values correctly.
 
 3. Non-numeric input:
 Test: Non-numeric characters in height and weight fields
@@ -98,12 +98,12 @@ Conclusion: The test passed, the application saved the file in different formats
 
 4. Large file handling:
 Test: Opened and saved a large text file.
-Result: The application handled the large file without crashing.
-Conclusion: The test passed, the application can handle large files without issues.
+Expected Result: The application was not tested to handle the large file without crashing.
+Conclusion: The test was not conducted, no large files available for testing. 
 
 5. Special characters and formatting:
 Test: Entered special characters and various text formatting in the text editor.
 Result: The content was displayed and saved correctly.
 Conclusion: The test passed, the application handled special characters and formatting correctly.
 
-Overall, the Health Assistant application passed all the validation tests, showing that it works correctly for various input values and text file operations. Any issues encountered during testing were addressed and fixed in the final version of the application. Screenshots of successful test cases are included in the supplementary documentation.
+Overall, the Health Assistant application passed most the validation tests, further tests to be conducted before peer review. Screenshots or files of all test cases are included in the supplementary documentation.
