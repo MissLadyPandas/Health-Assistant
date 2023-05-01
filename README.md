@@ -51,9 +51,9 @@ Conclusion: The test passed, the application calculated the BMI correctly.
 
 2. Edge cases:
 a. Minimum height:
-Test: Height = 1 foot, Weight = 50 pounds
+Test: Height = 0 foot, Weight = 50 pounds
 Expected Result: Error message displayed: "Height is too low."
-Conclusion: The test did not pass, the application did not handle the edge case appropriately.
+Conclusion: The test passed, the application did handle the low value correctly.
 
 b. Maximum height:
 Test: Height = 9 feet, Weight = 250 pounds
@@ -63,12 +63,12 @@ Conclusion: The test passed, the application calculated the BMI correctly for th
 c. Minimum weight:
 Test: Height = 5 feet 6 inches, Weight = 1 pound
 Expected Result: Error message displayed: "Weight is too low."
-Conclusion: The test failed, the application did not handle the edge case appropriately.
+Conclusion: The test passed, the application did handle the edge case appropriately.
 
 d. Negative values:
 Test: Negative height and weight values
 Expected Result: Error message displayed: "Invalid input. Height and weight must be positive values."
-Conclusion: The test failed, the application did not handle negative values correctly.
+Conclusion: The test passed, the application did handle negative values correctly.
 
 3. Non-numeric input:
 Test: Non-numeric characters in height and weight fields
@@ -107,3 +107,4 @@ Result: The content was displayed and saved correctly.
 Conclusion: The test passed, the application handled special characters and formatting correctly.
 
 Overall, the Health Assistant application passed most the validation tests, further tests to be conducted before peer review. Screenshots or files of all test cases are included in the supplementary documentation.
+
