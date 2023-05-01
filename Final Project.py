@@ -38,6 +38,19 @@ def create_bmi_calculator_frame(parent, root):
             inches = int(height_inches_entry.get())
             weight_pounds = float(weight_entry.get())
 
+            # Add validation checks for negative values
+            if feet < 0 or inches < 0 or weight_pounds < 0:
+                messagebox.showerror("Invalid input", "Height and weight must be positive values.")
+                return
+
+            # Add validation checks for minimum height and weight
+            if feet < 1:
+                messagebox.showerror("Invalid input", "Height is too low.")
+                return
+            if weight_pounds <= 1:  
+                messagebox.showerror("Invalid input", "Weight is too low.")
+                return
+
             #Convert feet and inches to meters and pounds to kilograms
             height_meters = (feet * 0.3048) + (inches * 0.0254)
             weight_kg = weight_pounds * 0.453592
